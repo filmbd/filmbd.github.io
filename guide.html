@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://adsreference.com/widget.js?id=1715060516324607500" defer="defer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff0000" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Discover and stream your favorite Movies, TV Shows, Anime, LiveTV, and explore Torrents with RgShows - a content search and watch website. Enjoy unlimited access to a vast library of content for free." />
+    <meta property="og:title" content="RgShows - Guide" />
+    <meta property="og:description" content="Discover and stream your favorite Movies, TV Shows, Anime, LiveTV, and explore Torrents with RgShows - a content search and watch website. Enjoy unlimited access to a vast library of content for free." />
+    <meta property="og:image" content="https://rgshows.me/logo.png" />
+    <meta property="og:url" content="https://rgshows.me/guide.html" />
+    <meta property="og:type" content="website" />
+    <title>RgShows - Guide</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/devtools-detector/2.0.17/devtools-detector.js"></script>
+    <script src="js/devtoolsdetetctor.js" preload></script>
+    <script src="js/nocheats.js" preload></script>
+    <link rel="preload stylesheet" href="css/flash.css" as="style">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background for container */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            color: #f39c12;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .features, .shortcuts {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .features img {
+            height: 100%;
+            width: 100%;
+        }
+        .features i, .shortcuts i {
+            color: #f39c12;
+            margin-right: 10px;
+        }
+        .shortcuts p {
+            margin: 10px 0;
+        }
+        .shortcut-keys {
+            background-color: #333;
+            border-radius: 5px;
+            padding: 5px;
+            display: inline-block;
+        }
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .stats-button {
+            display: block;
+            width: 100%;
+            background-color: #f39c12;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .stats-button:hover {
+            background-color: #d98310;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1f1f1f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333333;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555555;
+        }
+        .message-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="backgroundVideo">
+            <!-- Initially, there is no source, it will be set using JavaScript -->
+        </video>
+    </div>
+    <iframe src="views.html" style="display: none;" id="viewsFrame"></iframe>
+        <script>
+            document.getElementById('viewsFrame').onload = function() {
+                var iframeDoc = document.getElementById('viewsFrame').contentDocument || document.getElementById('viewsFrame').contentWindow.document;
+                var viewsCounter = iframeDoc.querySelector('script[src*="freevisitorcounters.com"]');
+                if (viewsCounter) {
+                    document.getElementById('viewsCount').innerText = 'Total Views: (Check views.html)';
+                } else {
+                    document.getElementById('viewsCount').innerText = 'Failed to load view counter.';
+                }
+            };
+        </script>
+    <div class="container">
+        <center><h1>RgShows 🎬</h1></center>
+        <center><p>RgShows is an open-source HTML-based platform that allows users to watch a variety of content, including TV Shows, Movies, Anime, Live TV and explore Torrents – all for free! Our mission is to provide an enjoyable streaming experience with minimal ads and customizable features.</p></center>
+        
+        <div class="features">
+            <center><h2>Features</h2></center>
+            <ul>
+                <center><li><i class="fas fa-video"></i> <strong>Free Streaming:</strong> Watch your favorite TV shows, movies, and anime without any subscription fees.</li></center>
+                <center><li><i class="fas fa-globe"></i> <strong>Wide Variety:</strong> Explore a diverse library of content, including the latest releases and timeless classics.</li></center>
+                <center><li><i class="fas fa-ad"></i> <strong>Minimal Ads:</strong> We believe in a streamlined viewing experience, so we keep advertisements to a minimum.</li></center>
+                <center><li><i class="fas fa-paint-brush"></i> <strong>Customizations:</strong> Tailor your viewing experience with customizable settings for a personalized touch.</li></center>
+                <center><li><i class="fas fa-keyboard"></i> <strong>Shortcuts:</strong> Use shortcuts for quick navigation.</li></center>
+            </ul>
+        </div>
+
+        <div class="shortcuts">
+            <center><h2>Shortcut Keys</h2></center>
+            <center><p><span class="shortcut-keys">Alt + 1</span> keys to go to home page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 2</span> keys to go to Movies page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 3</span> keys to go to Shows page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 4</span> keys to go to Anime page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 5</span> keys to go to LiveTV page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + 6</span> keys to go to Settings page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + T or t</span> keys to go to Torrent page quickly.</p></center>
+            <center><p><span class="shortcut-keys">Alt + M or m</span> keys to watch a random movie.</p></center>
+            <center><p><span class="shortcut-keys">Alt + S or s</span> keys to watch a random series/show.</p></center>
+            <center><p><span class="shortcut-keys">Alt + X or x</span> keys to close the movies/series/shows player.</p></center>
+            <center><p><span class="shortcut-keys">Alt + Delete</span> keys to clear all the data.</p></center>
+            <center><p><span class="shortcut-keys">Alt + ←</span> keys to navigate to the backward page if exist.</p></center>
+            <center><p><span class="shortcut-keys">Alt + →</span> keys to navigate to the forward page if exist.</p></center>
+        </div>
+        <div class="features">
+            <center><h2>ScreenShots</h2></center><p>&nbsp; </pa>
+            <ul>
+                <center><li class="message-container" id="HowToPlayMovies"><strong>How to open movies ?</strong></li></center>
+                <img src="guidescreenshots/Movies_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSelectMoviesServers"><strong>How play movies from Servers ?</strong></li></center>
+                <img src="guidescreenshots/Movies_2.png"><p>&nbsp; </pa>
+                <center><li class="message-container"id="HowToPlayShows"><strong>How to open Shows ?</strong></li></center>
+                <img src="guidescreenshots/Shows_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSelectShowsEpisode"><strong>How to choose episodes ?</strong></li></center>
+                <img src="guidescreenshots/Shows_2.png"><p>&nbsp; </pa>
+                <center><li class="message-container"id="HowToSelectShowsServers"><strong>How to play episodes from different Servers ?</strong></li></center>
+                <img src="guidescreenshots/Shows_3.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToPlayAnime"><strong>How to open Anime ?</strong></li></center>
+                <img src="guidescreenshots/Anime_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSelectAnimeEpisode"><strong>How to select episodes in Anime?</strong></li></center>
+                <img src="guidescreenshots/Anime_2.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSelectAnimeServers"><strong>How to select different Servers or Download Anime?</strong></li></center>
+                <img src="guidescreenshots/Anime_3.png"><p>&nbsp; </pa>
+                <center><li class="message-container"id="HowToPlayLiveTV"><strong>How to open LiveTv?</strong></li></center>
+                <img src="guidescreenshots/LiveTV_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSelectLiveTVChannels"><strong>How to select different channels?</strong></li></center>
+                <img src="guidescreenshots/LiveTV_2.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToMarkChannelFav"><strong>How to Mark Channel as Favorite?</strong></li></center>
+                <img src="guidescreenshots/LiveTV_3.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToOpenSettings"><strong>How to open Settings?</strong></li></center>
+                <img src="guidescreenshots/Settings_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToCustomizeSettings"><strong>How to customize RgShows or Clear my data?</strong></li></center>
+                <img src="guidescreenshots/Settings_2.png">
+                <img src="guidescreenshots/Settings_3.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToUseSearch"><strong>How to Search?</strong></li></center>
+                <img src="guidescreenshots/Search_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToOpenTorrents"><strong>How to open Torrent?</strong></li></center>
+                <img src="guidescreenshots/Torrents_1.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToSearchTorrents"><strong>How to Search or use Torrent Search Engine?</strong></li></center>
+                <img src="guidescreenshots/Torrents_2.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToAddPwa"><strong>How to add RgShows PWA?</strong></li></center>
+                <img src="guidescreenshots/PWA_pc.png"><p>&nbsp; </pa>
+                <img src="guidescreenshots/PWA_mobile_1.png"><p>&nbsp; </pa>
+                <img src="guidescreenshots/PWA_mobile_2.png"><p>&nbsp; </pa>
+                <img src="guidescreenshots/PWA_mobile_3.png"><p>&nbsp; </pa>
+                <center><li class="message-container" id="HowToReportUs"><strong>How to report us any issues?</strong></li></center>
+                <img src="guidescreenshots/Issues_1.png"><p>&nbsp; </pa>
+                <img src="guidescreenshots/Issues_2.png"><p>&nbsp; </pa>
+            </ul>
+        </div>        
+        <button class="stats-button" onclick="window.location.href='views.html'">Check RgShows Stats</button>
+        <button class="stats-button" onclick="window.location.href='dmca.html'">DMCA</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var videos = [
+                'https://files.catbox.moe/4jghie.mp4',
+                'https://files.catbox.moe/fmz6cb.mp4',
+                'https://files.catbox.moe/3muls6.mp4',
+                'https://files.catbox.moe/8l96u2.mp4',
+                'https://files.catbox.moe/97rjwl.mp4',
+                'https://files.catbox.moe/ck9i9m.mp4'
+            ]; // Array of video URLs
+            var randomIndex = Math.floor(Math.random() * videos.length); // Generate a random index
+            var video = document.getElementById('backgroundVideo');
+            video.src = videos[randomIndex]; // Set the source of the video
+        });
+    </script>
+    <script src="js/logger.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/blockIP.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/blocker.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/popupblocker.js"></script>
+    <script src="js/openload.user.js"></script>
+    <script src="js/adblock.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/screenfull.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const storedCursor = localStorage.getItem("selectedCursor");
+        const cursorType = storedCursor ? parseInt(storedCursor) : 1;
+
+        new kursor({
+            type: cursorType
+        });
+    });
+</script>
+<script>
+    const myPopups = new Popup({
+        id: "Discord",
+        title: "Discord?",
+        content: `
+            Join us on Discord {a-https://discord.gg/bosskingdom-comeback-1090560322760347649}[Here!]`,
+        showImmediately: true
+    });
+</script>
+</body>
+</html>
