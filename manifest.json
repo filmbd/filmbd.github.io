@@ -1,7 +1,7 @@
 {
   "name": "FilmBD",
-  "short_name": "RgShows",
-  "description": "Discover and stream your favorite Movies, TV Shows, Anime, LiveTV, and explore Torrents with RgShows - a content search and watch website. Enjoy unlimited access to a vast library of content for free.",
+  "short_name": "FilmBD",
+  "description": "Discover and stream your favorite Movies, TV Shows, Anime, LiveTV, and explore Torrents with FilmBD - a content search and watch website. Enjoy unlimited access to a vast library of content for free.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
